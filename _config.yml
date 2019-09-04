@@ -1,4 +1,4 @@
-home_page: home.md # filename under /source/_posts/
+home_page: hello-world.md # filename under /source/_posts/
 menu_page: menu.md # filename under /source/_posts/
 
 favicon_url: favicon.ico

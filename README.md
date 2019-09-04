@@ -3,7 +3,7 @@
 ## Installation
 
 ```
-git clone https://github.com/kaiiiz/hexo-theme-book.git themes/book
+git clone https://github.com/AngelName/hexo-theme-book.git themes/book
 ```
 
 If you don't have scss renderer, follow this:
@@ -20,17 +20,23 @@ theme: book
 
 ## Change markdown renderer
 
+为了更好的渲染质量,我建议你应该改变默认渲染
+详情请看 [change markdown renderer](https://github.com/AngelName/hexo-theme-book/wiki/Change-markdown-renderer)
 For better render quality, I suggest that you should change the default renderer.
 
-The detail, see [change markdown renderer](https://github.com/kaiiiz/hexo-theme-book/wiki/Change-markdown-renderer)
+The detail, see [change markdown renderer](https://github.com/AngelName/hexo-theme-book/wiki/Change-markdown-renderer)
 
 ## Katex support
 
-For Katex support, please follow the instruction above to change your renderer to `hexo-renderer-markdown-it`, after that, see [katex support](https://github.com/kaiiiz/hexo-theme-book/wiki/Katex-support)
+为了支持 katex 把渲染器修改成hexo-renderer-markdown-it
+然后,在看下支持列表[katex support](https://github.com/AngelName/hexo-theme-book/wiki/Katex-support)
+
+For Katex support, please follow the instruction above to change your renderer to `hexo-renderer-markdown-it`, after that, see [katex support](https://github.com/AngelName/hexo-theme-book/wiki/Katex-support)
 
 ## Configuration
 
-The detail of config, see [Configuration](https://github.com/kaiiiz/hexo-theme-book/wiki/Configuration)
+详细的配置索命看这个
+The detail of config, see [Configuration](https://github.com/AngelName/hexo-theme-book/wiki/Configuration)
 
 ### Smooth Update
 
@@ -51,4 +57,12 @@ comments: <boolean> (default: true)
 
 ## Update
 
+进入主题目录,运行`git pull`.如果你是用/source/_data/book/yml,请注意更新不同的_config.yml
 Jump into the theme folder, run `git pull`. If you use `/source/_data/book.yml`, please note the diffrence of updated `_config.yml`.
+
+
+## Feature List
+- [ ] 标签分类
+- [ ] 归档 
+- [ ] 门户首页
+- [ ] 时间线
