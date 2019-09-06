@@ -7,23 +7,13 @@
   <%-page.content%>
 </div>
 
+
+<%- partial('_partials/paginator') %>
+
 <% if(page.comments != false) { %>
   <div class="book-comments">
     <%- partial('_partials/comments') %>
   </div>
 <% } %>
-<div id="footer-paginator">
-  <% console.log(page.hasNext,page.nextPath) %>
-  <% if(page.hasPrev  && page.prevPath)  { %>
-    <div class="prev">
-      <%- link_to(page.prevPath,`<span>上一篇: </span><span>${page.prevTitle}</span>`) %>
-    </div>
-  <% } %>
-  <%-paginator()%>
-  <% if(page.hasNext && page.nextPath) { %>
-    <div class="next">
-      <%- link_to(page.nextPath,`<span>下一篇: </span>${page.nextTitle}`) %>
-    </div>
-  <% } %>
-</div>
+
 <%- js('/js/book-post') %>

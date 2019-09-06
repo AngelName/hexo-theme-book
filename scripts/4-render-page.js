@@ -15,7 +15,7 @@ hexo.extend.generator.register('post', function (locals) {
      match= page.raw.match(pattern);
      matchTitle = page.raw.match(titlePattern);
       if(match.length!=matchTitle.length){
-        throw TypeError("两个匹配的不相同",match,matchTitle);
+        throw TypeError("根据菜单生成的两个匹配的不相同",match,matchTitle);
       }
     }
   })
@@ -23,13 +23,14 @@ hexo.extend.generator.register('post', function (locals) {
     post.hasNext=post.hasPrev = true;
     var current =match.indexOf(post.slug);
     if(current!=-1){
+      if(current===0)post.hasPrev = false;
+      if(current===match.length-1) post.hasNext = false;
       post.nextPath = match[current+1]||null;
       post.nextTitle = matchTitle[current+1]||null;
       post.prevPath = match[current-1]||null;
-      post.prevTitle = match[current-1]||null;
+      post.prevTitle = matchTitle[current-1]||null;
     }
-    if(i===0)post.hasPrev = false;
-    if(i===locals.posts.length-1) post.hasNext = false;
+
     return {
       path: post.path,
       data: post,
