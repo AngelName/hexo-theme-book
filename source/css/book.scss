@@ -11,7 +11,9 @@
     padding: 0 $padding-16;
   }
   
-  font-family: 'Noto Sans TC', 'Noto Sans SC', 'Noto Sans', sans-serif;
+  font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+  //字间距
+  letter-spacing: $book-content-p-letter-spacing;
 }
 
 .book-content {
@@ -281,6 +283,7 @@
     ul {
       list-style: none;
       margin-left: 0;
+
       ul {
         margin: 0 0 0 .5rem;
       }
@@ -299,7 +302,7 @@
   }
 
   .book-sidebar-current {
-    color: $book-primary-color;
+      color: $book-primary-color;
   }
 }
 
