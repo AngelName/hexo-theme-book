@@ -4,7 +4,7 @@
 
 hexo.extend.generator.register('post', function (locals) {
   var posts = locals.posts.toArray();
-  var pattern = /(?<=\(\/).*?(?=\))/g;
+  var pattern = /(?<=\().*?(?=\))/g;
   var titlePattern = /(?<=\[).*(?=\])/g;
   var menu = hexo.theme.config.menu_page;
   var pages = hexo.locals.get('pages')
@@ -21,7 +21,7 @@ hexo.extend.generator.register('post', function (locals) {
   })
   return locals.posts.map(function (post, i) {
     post.hasNext=post.hasPrev = true;
-    var current =match.indexOf(post.slug);
+    var current =matchTitle.indexOf(post.title);
     if(current!=-1){
       if(current===0)post.hasPrev = false;
       if(current===match.length-1) post.hasNext = false;

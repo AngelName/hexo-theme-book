@@ -2,13 +2,13 @@
 <div id="footer-paginator">
   <% if(page.hasPrev  && page.prevPath)  { %>
     <div class="prev">
-      <%- link_to(page.prevPath,`<span>上一篇: </span><span>${page.prevTitle}</span>`) %>
+      <a href= <%=page.prevPath%> ><span>上一篇: </span> <%=page.prevTitle%> </a>
     </div>
   <% } %>
   <%-paginator()%>
   <% if(page.hasNext && page.nextPath) { %>
     <div class="next">
-      <%- link_to(page.nextPath,`<span>下一篇: </span>${page.nextTitle}`) %>
+      <a href= <%=page.nextPath%> ><span>下一篇: </span> <%=page.nextTitle%> </a>
     </div>
   <% } %>
 </div>
