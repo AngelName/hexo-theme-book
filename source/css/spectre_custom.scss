@@ -95,9 +95,9 @@ $custom-li-icon:'☛ ';
 }
 .note{
   @include marked();
-  background: #ffd6fc;
+  background: #ffecfe;
     &::before{
-      background: #ff12cc;
+      background:#ff90e7 ;
     }
   
 }
