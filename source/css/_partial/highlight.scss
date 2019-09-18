@@ -7,7 +7,8 @@ figure.highlight {
 	overflow: auto;
 
     pre {
-        font-size: 13px;
+        font-size: 14px;
+        font-weight: 400;
         line-height: 22px;
     }
 
@@ -83,14 +84,14 @@ figure.highlight {
             background: #dfd;
         }
         .meta {
-            color:#6faadb;
+            color:#007fe7;
         }
         .comment {
             color:#5c6370;
             font-style:italic;
         }
         .tag {
-            color: #39adb5;
+            color: #00bac7;
         }
         .number,
         .preprocessor,
@@ -98,10 +99,10 @@ figure.highlight {
         .params,
         .constant,
         .command {
-            color: #d47171;
+            color: #e00000;
         }
         .built_in {
-            color:#e2b35c
+            color:#e09200
         }
         .variable,
         .attribute,
@@ -126,12 +127,12 @@ figure.highlight {
         .special,
         .number,
         .formula {
-            color:#83c951;
+            color:#57d100;
         }
         .keyword,
         .title,
         .css .hexcolor {
-            color:#9675c2;
+            color:#5800ca;
         }
         .function,
         .python .decorator,
@@ -141,11 +142,11 @@ figure.highlight {
         .perl .sub,
         .javascript .title,
         .coffeescript .title {
-            color: #6181b6;
+            color: #004fcf;
         }
         .tag .attr,
         .javascript .function {
-            color: #c678dd;
+            color: #b000e6;
         }
     }
 }
